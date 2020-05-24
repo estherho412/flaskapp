@@ -8,6 +8,7 @@ loaded_model = pickle.load(open('titanicmodeldeploy.pkl','rb'))
 
 @app.route('/')
 def home():
+    123
     return render_template('titanic.html')
 def predictor(to_predict_list):
     predictedresult = loaded_model.predict(np.array(to_predict_list).reshape(1,len(to_predict_list)))
