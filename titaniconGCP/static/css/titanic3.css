@@ -1,0 +1,17 @@
+body{
+    background-color: white;
+    background-image: url(https://d9nvuahg4xykp.cloudfront.net/-6663344105692847038/-2492229357160751325.jpg);
+    background-repeat: no-repeat;
+    color: white;
+}
+
+    h1{
+        color: white;
+        text-align: left;
+    }
+
+    p{
+        color: white;
+        font-family: cursive;
+        font-size: medium;
+    }

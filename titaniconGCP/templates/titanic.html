@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Titanic Web App</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='css/titanic3.css') }}">
+</head>
+
+<body>
+
+    <h1>Titanic Classification Machine Learning Model</h1>
+    <p>Please fill in the information below to predict the survival in titantic event.</p>
+    <br>
+    <form action='/result' method='POST'>
+        <label>Passenger class</label>
+            <select name='Pclass'>
+                <option value=1>1</option>
+                <option value=2>2</option>
+                <option value=3>3</option>
+            </select>
+        <br>
+        <label>Age</label>
+            <input type='text' name='Age'>
+        <br>
+        <label>No. of siblings and spouse</label>
+            <input type='text' name='SibSp'>
+        <br>
+        <label>No. of parents and children</label>
+            <input type='text' name='Parch'>
+        <br>
+        <label>Price of ticket</label>
+            <input type='text' name='Fare'>
+        <br>
+        <label>Gender</label>
+            <select name='Sex'>
+                <option value=1>Male</option>
+                <option value=0>Female</option>
+            </select>
+        <br>
+        <label>Embarked port:</label><br>
+            <label>Queenstown</label>
+            <select name='Queenstown'>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+            <label>Southampton</label>
+            <select name='Southampton'>
+                <option value=0>No</option>
+                <option value=1>Yes</option>
+            </select>
+        <br>
+        <br>
+        <input type='submit' value='Submit'>
+    </form>
+
+
+</body>
+
+</html>
