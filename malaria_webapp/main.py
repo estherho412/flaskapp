@@ -7,7 +7,7 @@ from tensorflow.keras.preprocessing.image import img_to_array
 from tensorflow.keras.models import load_model
 
 app = Flask(__name__)
-model = load_model('../trained_model/malaria.h5')
+model = load_model('malaria.h5')
 
 @app.route('/')
 def home():
