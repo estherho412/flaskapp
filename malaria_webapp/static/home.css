@@ -1,0 +1,14 @@
+body{
+    background-color: slategray;
+}
+
+h1{
+    font-family: fantasy;
+    color: darkblue;
+    text-align: center;
+}
+
+p{
+    font-family: fantasy;
+    font-size: medium;
+}
